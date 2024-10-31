@@ -185,7 +185,20 @@ class MyArrayWithNumbers {
     }
     return occurrences;
   }
+
+  capitalize(words: Array<string>): Array<string> {
+    let capitalizedWords: Array<string> = [];
+
+    words.forEach((word) => {
+      let firstLetter = word[0].toLocaleUpperCase();
+      let restOfWord = word.slice(1);
+
+      capitalizedWords.push(firstLetter + restOfWord);
+    });
+
+    return capitalizedWords;
+  }
 }
 
 let instance = new MyArrayWithNumbers();
-console.log(instance.occurrences("anticonstitucionalissimamente"));
+console.log(instance.capitalize(["amor", "gustavo", "letra", "palavras"]));

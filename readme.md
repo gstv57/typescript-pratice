@@ -34,7 +34,7 @@
 
 ### Strings
 - [X] Crie um verificador de palíndromo.
-- [?] Desenvolva uma função que conta as ocorrências de cada caractere.
+- [X] Desenvolva uma função que conta as ocorrências de cada caractere.
 - [ ] Escreva um programa que capitaliza a primeira letra de cada palavra.
 - [ ] Crie uma função que verifica se duas strings são anagramas.
 - [ ] Desenvolva um programa que codifica uma string em ROT13.
