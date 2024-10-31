@@ -155,5 +155,37 @@ class MyArrayWithNumbers {
     return "Not is Palindrome";
   }
 
-  occurrences(text: string) {}
+  occurrences(text: string) {
+    // create type custom to represent the occurrence
+    // define struct to object, where the "key" is string, and value is number ( count )
+    type Occurrence = {
+      [letter: string]: number;
+    };
+
+    // init array void to storage the occurrence
+    let occurrences: Occurrence[] = [];
+
+    for (let i = 0; i < text.length; i++) {
+      let letter = text[i].toLowerCase();
+
+      // find index search inside occurrences[]
+      const existingLetterIndex = occurrences.findIndex(
+        // Object.keys(occurrence)[0] get first letter and unique key from object
+        // return index if letter exists, or -1 if not exist
+        (occurrence) => Object.keys(occurrence)[0] === letter
+      );
+
+      if (existingLetterIndex !== -1) {
+        // increase the count of the repeated letter
+        occurrences[existingLetterIndex][letter]++;
+      } else {
+        // if not exists, added new object with count = 1
+        occurrences.push({ [letter]: 1 });
+      }
+    }
+    return occurrences;
+  }
 }
+
+let instance = new MyArrayWithNumbers();
+console.log(instance.occurrences("anticonstitucionalissimamente"));
