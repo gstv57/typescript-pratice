@@ -35,12 +35,10 @@
 ### Strings
 - [X] Crie um verificador de palíndromo.
 - [X] Desenvolva uma função que conta as ocorrências de cada caractere.
-- [ ] Escreva um programa que capitaliza a primeira letra de cada palavra.
-- [ ] Crie uma função que verifica se duas strings são anagramas.
-- [ ] Desenvolva um programa que codifica uma string em ROT13.
+- [X] Escreva um programa que capitaliza a primeira letra de cada palavra.
 
 ### Objetos
-- [ ] Crie uma classe para gerenciar uma conta bancária com depósito/saque.
+- [X] Crie uma classe para gerenciar uma conta bancária com depósito/saque.
 - [ ] Desenvolva um gerenciador de biblioteca com livros e membros.
 - [ ] Escreva um sistema de gestão de inventário simples.
 - [ ] Crie uma classe para gerenciar uma lista de tarefas.
@@ -61,17 +59,3 @@
 - [ ] Desenvolva uma lista encadeada simples.
 - [ ] Escreva uma árvore binária de busca.
 - [ ] Crie uma tabela hash simples.
-
-### Projetos Práticos
-- [ ] Desenvolva um jogo da velha.
-- [ ] Crie um conversor de moedas.
-- [ ] Escreva um gerador de senhas.
-- [ ] Desenvolva um cronômetro.
-- [ ] Crie uma calculadora científica.
-
-### Desafios Avançados
-- [ ] Implemente um sistema de cache com LRU.
-- [ ] Crie um parser JSON simples.
-- [ ] Desenvolva um mini-compilador de expressões matemáticas.
-- [ ] Escreva um sistema completo de validação de formulários.
-- [ ] Crie um gerenciador de estado simples (como um mini Redux).
